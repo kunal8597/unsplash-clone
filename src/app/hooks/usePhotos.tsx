@@ -33,7 +33,7 @@ const usePhotos = ({ query, pageNumber }: usePhotoProps): { photos: Photo[], max
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`https://api.unsplash.com/search/photos?page=${pageNumber}&per_page=30&query=${query}&client_id=mGd5AlKdydkyIYiGro0xm2mQrCnITrZY99UfTDZRdmE`);
+        const response = await fetch(`https://api.unsplash.com/search/photos?page=${pageNumber}&per_page=30&query=${query}&client_id=``);
 
         if (!response.ok) {
           throw new Error(`${response.status} Error, something went wrong`);
